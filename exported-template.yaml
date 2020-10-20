@@ -1,0 +1,984 @@
+apiVersion: v1
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-14T23:00:46Z"
+    generation: 1
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: less-simple
+    namespace: ahmadq
+    resourceVersion: "2841438"
+    selfLink: /apis/image.openshift.io/v1/namespaces/ahmadq/imagestreams/less-simple
+    uid: a4827759-a3aa-4cee-b09e-682e31f631fc
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: image-registry.openshift-image-registry.svc:5000/ahmadq/less-simple
+    tags:
+    - items:
+      - created: "2020-10-14T23:02:22Z"
+        dockerImageReference: image-registry.openshift-image-registry.svc:5000/ahmadq/less-simple@sha256:722496d2a4c2199d817da7d3ec16964d61d1caf3136607e0d391953c1704b59f
+        generation: 1
+        image: sha256:722496d2a4c2199d817da7d3ec16964d61d1caf3136607e0d391953c1704b59f
+      tag: latest
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      description: Keeps track of changes in the application image
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-20T18:24:41Z"
+    generation: 1
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: nodejs-mongodb
+    namespace: ahmadq
+    resourceVersion: "5034661"
+    selfLink: /apis/image.openshift.io/v1/namespaces/ahmadq/imagestreams/nodejs-mongodb
+    uid: 34124508-aba3-4f8b-be0a-c45e458a8bae
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: image-registry.openshift-image-registry.svc:5000/ahmadq/nodejs-mongodb
+    tags:
+    - items:
+      - created: "2020-10-20T18:25:29Z"
+        dockerImageReference: image-registry.openshift-image-registry.svc:5000/ahmadq/nodejs-mongodb@sha256:e8be7e4a397addae67c459488d1fda9d186026ff02d8ebd3c9da913b758a5f98
+        generation: 1
+        image: sha256:e8be7e4a397addae67c459488d1fda9d186026ff02d8ebd3c9da913b758a5f98
+      tag: latest
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-15T22:45:40Z"
+    generation: 1
+    labels:
+      app: titan
+      app.kubernetes.io/component: titan
+      app.kubernetes.io/instance: titan
+    name: titan
+    namespace: ahmadq
+    resourceVersion: "3320308"
+    selfLink: /apis/image.openshift.io/v1/namespaces/ahmadq/imagestreams/titan
+    uid: 3b29a1e7-16d8-4f02-87fe-58d3ad534a65
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: image-registry.openshift-image-registry.svc:5000/ahmadq/titan
+    tags:
+    - items:
+      - created: "2020-10-16T04:49:49Z"
+        dockerImageReference: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:6f21b5e4cede6f0fcff82fa2a2bf1f65d7d96f74f303a66f4feb3acae8a94a1e
+        generation: 1
+        image: sha256:6f21b5e4cede6f0fcff82fa2a2bf1f65d7d96f74f303a66f4feb3acae8a94a1e
+      - created: "2020-10-15T23:01:29Z"
+        dockerImageReference: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:244ab1674cf729ca2d36687109af74e9fcd38c4f4dff07d21d127885ddd605a9
+        generation: 1
+        image: sha256:244ab1674cf729ca2d36687109af74e9fcd38c4f4dff07d21d127885ddd605a9
+      - created: "2020-10-15T22:46:20Z"
+        dockerImageReference: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:1521fd9e84f3b9787e1b78350f60816e37ac48019689076e704dfb6f1726170b
+        generation: 1
+        image: sha256:1521fd9e84f3b9787e1b78350f60816e37ac48019689076e704dfb6f1726170b
+      tag: latest
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+      openshift.io/image.dockerRepositoryCheck: "2020-10-14T23:00:46Z"
+    creationTimestamp: "2020-10-14T23:00:45Z"
+    generation: 2
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: websphere-liberty
+    namespace: ahmadq
+    resourceVersion: "2840907"
+    selfLink: /apis/image.openshift.io/v1/namespaces/ahmadq/imagestreams/websphere-liberty
+    uid: ad8ecf2a-6b52-4e6a-b920-81649298494e
+  spec:
+    lookupPolicy:
+      local: false
+    tags:
+    - annotations:
+        openshift.io/imported-from: docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi
+      from:
+        kind: DockerImage
+        name: docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi
+      generation: 2
+      importPolicy: {}
+      name: 20.0.0.5-full-java11-openj9-ubi
+      referencePolicy:
+        type: Source
+  status:
+    dockerImageRepository: image-registry.openshift-image-registry.svc:5000/ahmadq/websphere-liberty
+    tags:
+    - items:
+      - created: "2020-10-14T23:00:46Z"
+        dockerImageReference: docker.io/ibmcom/websphere-liberty@sha256:238ef2f145d04850a3411bb1ea07f54844f33a250b5164f277f8dece5aed41c4
+        generation: 2
+        image: sha256:238ef2f145d04850a3411bb1ea07f54844f33a250b5164f277f8dece5aed41c4
+      tag: 20.0.0.5-full-java11-openj9-ubi
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-14T23:00:46Z"
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: less-simple
+    namespace: ahmadq
+    resourceVersion: "2840910"
+    selfLink: /apis/build.openshift.io/v1/namespaces/ahmadq/buildconfigs/less-simple
+    uid: 91001e3c-eedd-43d8-aadf-ec6e43143b05
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: less-simple:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      git:
+        uri: git@github.ibm.com:ahmadq/less-simple-stuff.git
+      sourceSecret:
+        name: github-ibm-com
+      type: Git
+    strategy:
+      dockerStrategy:
+        from:
+          kind: ImageStreamTag
+          name: websphere-liberty:20.0.0.5-full-java11-openj9-ubi
+      type: Docker
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: c2QgEsto6lm0gCNGtTbQ
+      type: GitHub
+    - generic:
+        secret: q2EmuEtvgim3XztU2L7H
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: docker.io/ibmcom/websphere-liberty@sha256:238ef2f145d04850a3411bb1ea07f54844f33a250b5164f277f8dece5aed41c4
+      type: ImageChange
+  status:
+    lastVersion: 1
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      description: Defines how to build the application
+      openshift.io/generated-by: OpenShiftNewApp
+      template.alpha.openshift.io/wait-for-ready: "true"
+    creationTimestamp: "2020-10-20T18:24:42Z"
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: nodejs-mongodb
+    namespace: ahmadq
+    resourceVersion: "5034386"
+    selfLink: /apis/build.openshift.io/v1/namespaces/ahmadq/buildconfigs/nodejs-mongodb
+    uid: 40783a26-880f-4240-962d-a950e1f92bb3
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: nodejs-mongodb:latest
+    postCommit:
+      script: npm test
+    resources: {}
+    runPolicy: Serial
+    source:
+      git:
+        uri: https://github.com/sclorg/nodejs-ex.git
+      type: Git
+    strategy:
+      sourceStrategy:
+        env:
+        - name: NPM_MIRROR
+          value: https://registry.npmjs.org
+        from:
+          kind: ImageStreamTag
+          name: nodejs:latest
+          namespace: openshift
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - imageChange:
+        lastTriggeredImageID: image-registry.openshift-image-registry.svc:5000/openshift/nodejs@sha256:87be8d1bf03ef6cf2d050ff86ea1798a6a40f0bf238d1d8b7eadb5f45530de36
+      type: ImageChange
+    - type: ConfigChange
+    - github:
+        secret: tO2djqCyM54lMOmRVw2DCAk6RJssdyHs3HTQKlcV
+      type: GitHub
+    - generic:
+        secret: IXSU4B8oscCF18pQ5MWX00WD6MoEhGMftta5ow6Q
+      type: Generic
+  status:
+    lastVersion: 1
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-15T22:45:40Z"
+    labels:
+      app: titan
+      app.kubernetes.io/component: titan
+      app.kubernetes.io/instance: titan
+    name: titan
+    namespace: ahmadq
+    resourceVersion: "3320123"
+    selfLink: /apis/build.openshift.io/v1/namespaces/ahmadq/buildconfigs/titan
+    uid: 9b4e352f-071e-4569-95a2-364d7ecac21c
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: titan:latest
+    postCommit:
+      command:
+      - python python.py
+    resources: {}
+    runPolicy: Serial
+    source:
+      git:
+        uri: https://github.com/ahmadq80/building-applications
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: nodejs:12
+          namespace: openshift
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: 9vKVb5hB4dUF9-YTabNw
+      type: GitHub
+    - generic:
+        secret: YwbI6I7TLy5wHr_CeZIz
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: image-registry.openshift-image-registry.svc:5000/openshift/nodejs@sha256:87be8d1bf03ef6cf2d050ff86ea1798a6a40f0bf238d1d8b7eadb5f45530de36
+      type: ImageChange
+  status:
+    lastVersion: 3
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-14T23:00:46Z"
+    generation: 4
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: less-simple
+    namespace: ahmadq
+    resourceVersion: "2842902"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/ahmadq/deploymentconfigs/less-simple
+    uid: 484323c8-66aa-4997-a2cd-6487374a2e55
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      deploymentconfig: less-simple
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          deploymentconfig: less-simple
+      spec:
+        containers:
+        - env:
+          - name: MY_SECRET_VAR
+            valueFrom:
+              secretKeyRef:
+                key: MY_SECRET_VAR
+                name: my-special-secret
+          image: image-registry.openshift-image-registry.svc:5000/ahmadq/less-simple@sha256:722496d2a4c2199d817da7d3ec16964d61d1caf3136607e0d391953c1704b59f
+          imagePullPolicy: Always
+          name: less-simple
+          ports:
+          - containerPort: 9443
+            protocol: TCP
+          - containerPort: 9080
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /my-special-folder
+            name: volume-zpsqs
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - configMap:
+            defaultMode: 420
+            name: my-dockerfile
+          name: volume-zpsqs
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - less-simple
+        from:
+          kind: ImageStreamTag
+          name: less-simple:latest
+          namespace: ahmadq
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/ahmadq/less-simple@sha256:722496d2a4c2199d817da7d3ec16964d61d1caf3136607e0d391953c1704b59f
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2020-10-14T23:02:27Z"
+      lastUpdateTime: "2020-10-14T23:02:27Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2020-10-14T23:07:03Z"
+      lastUpdateTime: "2020-10-14T23:07:06Z"
+      message: replication controller "less-simple-3" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    details:
+      causes:
+      - type: ConfigChange
+      message: config change
+    latestVersion: 3
+    observedGeneration: 4
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      description: Defines how to deploy the database
+      openshift.io/generated-by: OpenShiftNewApp
+      template.alpha.openshift.io/wait-for-ready: "true"
+    creationTimestamp: "2020-10-20T18:24:42Z"
+    generation: 2
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: mongodb
+    namespace: ahmadq
+    resourceVersion: "5034532"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/ahmadq/deploymentconfigs/mongodb
+    uid: 95fa0d73-ab85-40fb-98d9-d13dd867835d
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      name: mongodb
+    strategy:
+      activeDeadlineSeconds: 21600
+      recreateParams:
+        timeoutSeconds: 600
+      resources: {}
+      type: Recreate
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          name: mongodb
+        name: mongodb
+      spec:
+        containers:
+        - env:
+          - name: MONGODB_USER
+            valueFrom:
+              secretKeyRef:
+                key: database-user
+                name: nodejs-mongodb
+          - name: MONGODB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: database-password
+                name: nodejs-mongodb
+          - name: MONGODB_DATABASE
+            value: items
+          - name: MONGODB_ADMIN_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: database-admin-password
+                name: nodejs-mongodb
+          image: image-registry.openshift-image-registry.svc:5000/openshift/mongodb@sha256:d42c5a02ef850417ba09f857fef77668509fe60a1c45c6a134575c81207436e5
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            successThreshold: 1
+            tcpSocket:
+              port: 27017
+            timeoutSeconds: 1
+          name: mongodb
+          ports:
+          - containerPort: 27017
+            protocol: TCP
+          readinessProbe:
+            exec:
+              command:
+              - /bin/sh
+              - -i
+              - -c
+              - mongo 127.0.0.1:27017/$MONGODB_DATABASE -u $MONGODB_USER -p $MONGODB_PASSWORD
+                --eval="quit()"
+            failureThreshold: 3
+            initialDelaySeconds: 3
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              memory: 512Mi
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /var/lib/mongodb/data
+            name: mongodb-data
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: mongodb-data
+    test: false
+    triggers:
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - mongodb
+        from:
+          kind: ImageStreamTag
+          name: mongodb:3.6
+          namespace: openshift
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/openshift/mongodb@sha256:d42c5a02ef850417ba09f857fef77668509fe60a1c45c6a134575c81207436e5
+      type: ImageChange
+    - type: ConfigChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2020-10-20T18:24:57Z"
+      lastUpdateTime: "2020-10-20T18:24:57Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2020-10-20T18:24:58Z"
+      lastUpdateTime: "2020-10-20T18:24:58Z"
+      message: replication controller "mongodb-1" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    details:
+      causes:
+      - type: ConfigChange
+      message: config change
+    latestVersion: 1
+    observedGeneration: 2
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      description: Defines how to deploy the application server
+      openshift.io/generated-by: OpenShiftNewApp
+      template.alpha.openshift.io/wait-for-ready: "true"
+    creationTimestamp: "2020-10-20T18:24:42Z"
+    generation: 2
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: nodejs-mongodb
+    namespace: ahmadq
+    resourceVersion: "5034757"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/ahmadq/deploymentconfigs/nodejs-mongodb
+    uid: e6014e51-fcd5-4a5f-862e-22cc7fa42f51
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      name: nodejs-mongodb
+    strategy:
+      activeDeadlineSeconds: 21600
+      recreateParams:
+        timeoutSeconds: 600
+      resources: {}
+      type: Recreate
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          name: nodejs-mongodb
+        name: nodejs-mongodb
+      spec:
+        containers:
+        - env:
+          - name: DATABASE_SERVICE_NAME
+            value: mongodb
+          - name: MONGODB_USER
+            valueFrom:
+              secretKeyRef:
+                key: database-user
+                name: nodejs-mongodb
+          - name: MONGODB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: database-password
+                name: nodejs-mongodb
+          - name: MONGODB_DATABASE
+            value: items
+          - name: MONGODB_ADMIN_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: database-admin-password
+                name: nodejs-mongodb
+          image: image-registry.openshift-image-registry.svc:5000/ahmadq/nodejs-mongodb@sha256:e8be7e4a397addae67c459488d1fda9d186026ff02d8ebd3c9da913b758a5f98
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 3
+          name: nodejs-mongodb
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 3
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 3
+          resources:
+            limits:
+              memory: 512Mi
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - nodejs-mongodb
+        from:
+          kind: ImageStreamTag
+          name: nodejs-mongodb:latest
+          namespace: ahmadq
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/ahmadq/nodejs-mongodb@sha256:e8be7e4a397addae67c459488d1fda9d186026ff02d8ebd3c9da913b758a5f98
+      type: ImageChange
+    - type: ConfigChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2020-10-20T18:25:38Z"
+      lastUpdateTime: "2020-10-20T18:25:38Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2020-10-20T18:25:32Z"
+      lastUpdateTime: "2020-10-20T18:25:39Z"
+      message: replication controller "nodejs-mongodb-1" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    details:
+      causes:
+      - type: ConfigChange
+      message: config change
+    latestVersion: 1
+    observedGeneration: 2
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-15T22:45:40Z"
+    generation: 4
+    labels:
+      app: titan
+      app.kubernetes.io/component: titan
+      app.kubernetes.io/instance: titan
+    name: titan
+    namespace: ahmadq
+    resourceVersion: "3320419"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/ahmadq/deploymentconfigs/titan
+    uid: d8acaab1-6eef-4ff7-9257-0e44eb447a90
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      deploymentconfig: titan
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          deploymentconfig: titan
+      spec:
+        containers:
+        - image: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:6f21b5e4cede6f0fcff82fa2a2bf1f65d7d96f74f303a66f4feb3acae8a94a1e
+          imagePullPolicy: Always
+          name: titan
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - titan
+        from:
+          kind: ImageStreamTag
+          name: titan:latest
+          namespace: ahmadq
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:6f21b5e4cede6f0fcff82fa2a2bf1f65d7d96f74f303a66f4feb3acae8a94a1e
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2020-10-15T22:46:27Z"
+      lastUpdateTime: "2020-10-15T22:46:27Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2020-10-16T04:49:55Z"
+      lastUpdateTime: "2020-10-16T04:49:58Z"
+      message: replication controller "titan-3" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    details:
+      causes:
+      - imageTrigger:
+          from:
+            kind: DockerImage
+            name: image-registry.openshift-image-registry.svc:5000/ahmadq/titan@sha256:6f21b5e4cede6f0fcff82fa2a2bf1f65d7d96f74f303a66f4feb3acae8a94a1e
+        type: ImageChange
+      message: image change
+    latestVersion: 3
+    observedGeneration: 4
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-14T23:00:46Z"
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: less-simple
+    namespace: ahmadq
+    resourceVersion: "2840897"
+    selfLink: /api/v1/namespaces/ahmadq/services/less-simple
+    uid: c3b44932-af53-4b0d-8c9f-969b13def73f
+  spec:
+    clusterIP: 172.21.55.34
+    ports:
+    - name: 9080-tcp
+      port: 9080
+      protocol: TCP
+      targetPort: 9080
+    - name: 9443-tcp
+      port: 9443
+      protocol: TCP
+      targetPort: 9443
+    selector:
+      deploymentconfig: less-simple
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      description: Exposes the database server
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-20T18:24:42Z"
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: mongodb
+    namespace: ahmadq
+    resourceVersion: "5034384"
+    selfLink: /api/v1/namespaces/ahmadq/services/mongodb
+    uid: f21d527a-144e-420f-8732-4b28ccb875c1
+  spec:
+    clusterIP: 172.21.20.161
+    ports:
+    - name: mongodb
+      port: 27017
+      protocol: TCP
+      targetPort: 27017
+    selector:
+      name: mongodb
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      description: Exposes and load balances the application pods
+      openshift.io/generated-by: OpenShiftNewApp
+      service.alpha.openshift.io/dependencies: '[{"name": "mongodb", "kind": "Service"}]'
+    creationTimestamp: "2020-10-20T18:24:41Z"
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: nodejs-mongodb
+    namespace: ahmadq
+    resourceVersion: "5034372"
+    selfLink: /api/v1/namespaces/ahmadq/services/nodejs-mongodb
+    uid: 6eee1a5e-e647-415d-b7b8-28bd552da143
+  spec:
+    clusterIP: 172.21.48.155
+    ports:
+    - name: web
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      name: nodejs-mongodb
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2020-10-15T22:45:40Z"
+    labels:
+      app: titan
+      app.kubernetes.io/component: titan
+      app.kubernetes.io/instance: titan
+    name: titan
+    namespace: ahmadq
+    resourceVersion: "3223349"
+    selfLink: /api/v1/namespaces/ahmadq/services/titan
+    uid: bd9e09f8-5bac-4979-ada4-4a593e790499
+  spec:
+    clusterIP: 172.21.88.245
+    ports:
+    - name: 8080-tcp
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      deploymentconfig: titan
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    annotations:
+      openshift.io/host.generated: "true"
+    creationTimestamp: "2020-10-14T23:03:03Z"
+    labels:
+      app: less-simple
+      app.kubernetes.io/component: less-simple
+      app.kubernetes.io/instance: less-simple
+    name: less-simple
+    namespace: ahmadq
+    resourceVersion: "2841715"
+    selfLink: /apis/route.openshift.io/v1/namespaces/ahmadq/routes/less-simple
+    uid: a97828b3-da64-4a65-88b2-274254f3b21c
+  spec:
+    host: less-simple-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+    port:
+      targetPort: 9080-tcp
+    tls:
+      termination: edge
+    to:
+      kind: Service
+      name: less-simple
+      weight: 100
+    wildcardPolicy: None
+  status:
+    ingress:
+    - conditions:
+      - lastTransitionTime: "2020-10-14T23:03:04Z"
+        status: "True"
+        type: Admitted
+      host: less-simple-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerCanonicalHostname: ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerName: default
+      wildcardPolicy: None
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+      openshift.io/host.generated: "true"
+    creationTimestamp: "2020-10-20T18:24:41Z"
+    labels:
+      app: nodejs-mongodb
+      template: nodejs-mongodb
+    name: nodejs-mongodb
+    namespace: ahmadq
+    resourceVersion: "5034379"
+    selfLink: /apis/route.openshift.io/v1/namespaces/ahmadq/routes/nodejs-mongodb
+    uid: 1c031e50-4d6e-474e-b940-190af7c4251d
+  spec:
+    host: nodejs-mongodb-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+    to:
+      kind: Service
+      name: nodejs-mongodb
+      weight: 100
+    wildcardPolicy: None
+  status:
+    ingress:
+    - conditions:
+      - lastTransitionTime: "2020-10-20T18:24:42Z"
+        status: "True"
+        type: Admitted
+      host: nodejs-mongodb-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerCanonicalHostname: ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerName: default
+      wildcardPolicy: None
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    annotations:
+      openshift.io/host.generated: "true"
+    creationTimestamp: "2020-10-15T22:46:56Z"
+    labels:
+      app: titan
+      app.kubernetes.io/component: titan
+      app.kubernetes.io/instance: titan
+    name: titan
+    namespace: ahmadq
+    resourceVersion: "3223795"
+    selfLink: /apis/route.openshift.io/v1/namespaces/ahmadq/routes/titan
+    uid: a7721b1d-b876-4b75-b786-178ac1c628f4
+  spec:
+    host: titan-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+    port:
+      targetPort: 8080-tcp
+    to:
+      kind: Service
+      name: titan
+      weight: 100
+    wildcardPolicy: None
+  status:
+    ingress:
+    - conditions:
+      - lastTransitionTime: "2020-10-15T22:46:56Z"
+        status: "True"
+        type: Admitted
+      host: titan-ahmadq.ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerCanonicalHostname: ose-internal-1602064171-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud
+      routerName: default
+      wildcardPolicy: None
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
